@@ -317,7 +317,7 @@ class Dump1090Exporter:
 
         # aircraft
         d = self.metrics["aircraft"]
-        for (name, label, doc) in Specs["aircraft"]:  # type: ignore
+        for name, label, doc in Specs["aircraft"]:  # type: ignore
             d[name] = create_gauge_metric(label, doc, prefix=self.prefix)
 
         # statistics

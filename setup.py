@@ -33,7 +33,6 @@ def parse_requirements(filename):
 
 
 if __name__ == "__main__":
-
     setup(
         name="dump1090exporter",
         version=version,
